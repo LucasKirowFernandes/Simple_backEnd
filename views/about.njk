@@ -1,0 +1,36 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Fowarding Message/Telegram</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="item">
+    <div class="text">Número de telefone</div>
+        <div>
+            <input 
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="+55 (11) 99888-7777"
+            >
+        </div>
+    </div>
+</div>
+
+<div class="item">
+    <div>Entre com o codigo enviado por SMS</div>
+    <div>
+        <input 
+            type="number"
+            name="SMS"
+            placeholder=""
+        >
+    </div>
+</div>
+
+<div class="button">
+    <button><a href="">Validar</a></button>
+</div>
+{% endblock %}
